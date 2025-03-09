@@ -1,0 +1,27 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+input{
+    width: 300px;
+    padding: 10px;
+    margin: 10px 20px 10px;
+    border: 1px solid #efbff9;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+.add-btn{
+    background-color: #bb08e1;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-width: 0px;
+}
+
+.task-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
