@@ -34,8 +34,8 @@ const TaskForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setInputText('');
-        setTasks([...tasks, {id: tasks.length + 1, text: inputText}]); 
-        localStorage.setItem('tasks', JSON.stringify([...tasks, {id: tasks.length + 1, text: inputText}]));
+        setTasks([...tasks, {id: uuid(), text: inputText}]); 
+        localStorage.setItem('tasks', JSON.stringify([...tasks, {id: uuid(), text: inputText}]));
          
     }
 
