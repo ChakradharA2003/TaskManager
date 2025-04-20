@@ -6,15 +6,15 @@ import TaskHandler from '../TaskHandler/taskHandler';
 const TaskForm = () => {
     const [tasks,setTasks] = useState([
         {
-            id: 1,
+            id: uuid(),
             text: 'Doctors Appointment',
         },
         {
-            id: 2,
+            id: uuid(),
             text: 'Meeting at School',
         },
         {
-            id: 3,
+            id: uuid(),
             text: 'Food Shopping',
         }
     ]);
@@ -53,7 +53,7 @@ const TaskForm = () => {
             <div>
                 <ul className='task-list'>
                     {tasks.map((task) => (
-                            <TaskHandler key={uuid()} task={task} setTasksHandler={setTasksHandler}/>
+                            <TaskHandler key={task.id} task={task} setTasksHandler={setTasksHandler}/>
                     ))}
                 </ul>
             </div>
