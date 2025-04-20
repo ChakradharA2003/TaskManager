@@ -10,21 +10,34 @@
     margin: 8px;
     padding: 5px;
 }
-
+.checkbox-and-task{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.checkbox-and-task input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
 .delete-btn{
     background-color: transparent;
     border-width: 0px;
     cursor: pointer;
 }
-
-@media screen and (max-width: 470px){
-    .task{
-        width: 300px;
-    }
+.checked-task{
+    text-decoration: line-through;
+    color: #a0a0a0;
+}
+.delete-btn:hover{
+    background-color: #bb08e1;
+    border-radius: 5px;
+    color: white;
 }
 
-@media screen and (max-width: 370px){
+
+@media screen and (max-width: 600px){
     .task{
-        width: 240px;
+        width: 100%;
     }
 }
